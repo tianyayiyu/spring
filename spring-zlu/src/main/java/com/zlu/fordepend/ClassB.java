@@ -1,0 +1,15 @@
+package com.zlu.fordepend;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ClassB {
+
+	@Autowired
+	private ClassC classC;
+
+	public void b() {
+		classC.c();
+	}
+}
